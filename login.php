@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["user_id"] = $row["Librarian_id"];
             $_SESSION["email"] = $row["Email"];
 
-            header("Location: ../SIA/Admin/dashboard.php");
+            header("Location: ../LMS-SYSTEM-INTEG/Admin/dashboard.php");
             exit();
         } else {
             $error = "Invalid password";
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="../SIA/img/loa_logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../LMS-SYSTEM-INTEG/img/loa_logo.png" type="image/x-icon">
     <!-- BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>LOGIN</title>
     <style>
         .left-side {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../SIA/img/library.jpg);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../LMS-SYSTEM-INTEG/img/library.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -110,7 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="col-lg-6 form-section">
                     <div class="login-form mx-auto">
                         <div class="text-center mb-4">
-                            <a href="../index.html" class="logo"><img src="../SIA/img/loa_logo.png" class="w-25" alt=""></a>
+                            <a href="../index.html" class="logo"><img src="../LMS-SYSTEM-INTEG/img/loa_logo.png" class="w-25" alt=""></a>
                         </div>
                         <?php if (!empty($error)): ?>
                             <div class="alert alert-danger text-center">
