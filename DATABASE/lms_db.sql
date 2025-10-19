@@ -359,6 +359,19 @@ ALTER TABLE `student_logs`
 --
 ALTER TABLE `student_points`
   ADD CONSTRAINT `student_points_ibfk_1` FOREIGN KEY (`student_id_no`) REFERENCES `students` (`Student_ID_Number`);
+
+CREATE TABLE `settings` (
+  `Setting_ID` INT(11) NOT NULL AUTO_INCREMENT,
+  `Library_Name` VARCHAR(255) NOT NULL,
+  `Max_Borrow_Limit` INT(11) DEFAULT 3,
+  `Borrow_Duration` INT(11) DEFAULT 7,       -- in days
+  `Fine_Per_Day` DECIMAL(10,2) DEFAULT 0.00, -- in pesos
+  `Open_Hour` TIME DEFAULT '08:00:00',
+  `Close_Hour` TIME DEFAULT '17:00:00',
+  PRIMARY KEY (`Setting_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
