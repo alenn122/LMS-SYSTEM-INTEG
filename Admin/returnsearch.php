@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // connect to your lms_db
+include '../connection.php'; // connect to your lms_db
 
 $q = $_GET['q'] ?? '';
 

@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include '../connection.php';
 
 $studentId = $_POST['studentId'];
 $borrowDate = $_POST['borrowDate'];

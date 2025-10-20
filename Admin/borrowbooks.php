@@ -13,6 +13,7 @@ if ($result) {
     }
 }
 ?>
+    <link rel="stylesheet" href="style.css">
 
 <main class="main-content p-4">
     <div class="main-header mb-4">

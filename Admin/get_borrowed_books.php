@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include '../connection.php';
 header('Content-Type: application/json');
 
 $student_id = $_GET['student_id'] ?? '';

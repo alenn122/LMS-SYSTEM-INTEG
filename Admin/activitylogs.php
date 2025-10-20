@@ -36,20 +36,8 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity Log</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            background-color: #f4f7fb;
-        }
-
-        .main-header {
-            margin-top: 0;
-            background-color: #e9eef6;
-            text-align: center;
-            padding: 25px;
-            font-weight: bold;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
 
         .table th {
             background-color: #EDF0F6;
@@ -74,9 +62,9 @@ try {
 
 <body>
 
-    <div class="main-header">STUDENT ACTIVITY LOG</div>
-
+    
     <div class="container">
+        <h3 class="text-start mb-4 mt-4">ACTIVITY LOGS</h3>
         <!-- Filter Section -->
         <div class="row filter-section align-items-center">
             <div class="col-md-4">

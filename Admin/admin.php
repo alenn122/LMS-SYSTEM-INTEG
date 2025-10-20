@@ -1,6 +1,6 @@
 <?php
 require_once '../connection.php';
-require_once '../session_auth.php';
+// require_once '../session_auth.php';
 
 ?>
 <!DOCTYPE html>
@@ -20,6 +20,7 @@ require_once '../session_auth.php';
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ADMIN CSS -->
     <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="style.css">
     <title>ADMIN</title>
     <style>
         .main-header {

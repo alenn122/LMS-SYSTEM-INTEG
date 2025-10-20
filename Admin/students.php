@@ -57,16 +57,14 @@ $result = mysqli_query($conn, "SELECT * FROM students ORDER BY Student_ID DESC")
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Students</title>
-    <style>
-        .container {
-            margin-left: 300px !important;
-        }
-    </style>
+
 </head>
 
 <body>
     <div class="container">
+            <h3 class="text-start mb-4 mt-4">STUDENTS</h3>
         <div class="card shadow-sm border-0 mb-4">
             <div class="card-body">
                 <h4 class="mb-4">Add a New Student</h4>

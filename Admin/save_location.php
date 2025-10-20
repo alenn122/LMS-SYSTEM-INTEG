@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include '../connection.php';
 if(isset($_POST['location'])){
   $loc = trim($_POST['location']);
   if($loc != ''){

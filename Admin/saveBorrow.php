@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include '../connection.php';
 
 // Get JSON input
 $input = json_decode(file_get_contents('php://input'), true);

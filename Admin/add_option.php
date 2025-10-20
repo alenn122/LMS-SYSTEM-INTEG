@@ -1,5 +1,5 @@
 <?php
-include('db.php'); // make sure this points to your correct DB connection
+include('../connection.php'); // make sure this points to your correct DB connection
 
 if (isset($_POST['newCategory'])) {
     $newCategory = trim($_POST['newCategory']);

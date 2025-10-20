@@ -1,5 +1,6 @@
   <?php include '../Components/header.php'; ?>
   <?php include '../Components/sidebar.php'; ?>
+  <?php include '../connection.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,12 +10,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Return Books</title>
   <link rel="stylesheet" href="returnbooks.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
   <main class="main-content">
-    <h2 class="page-title">Return Books</h2>
+    <h3 class="text-start mb-4">RETURN BOOKS</h3>
 
     <div class="search-container">
       <input type="text" id="search" placeholder="Search by Student ID or Name...">
