@@ -1,0 +1,262 @@
+
+
+.main-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Search bar */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search {
+  width: 100%;
+  padding: 10px 40px 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+#search:focus {
+  border-color: #007bff;
+}
+
+/* Clear (X) button inside input */
+.clear-btn {
+  position: absolute;
+  right: 100px; /* slightly before the search button */
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  display: none; /* hidden by default */
+}
+
+.clear-btn:hover {
+  color: #333;
+}
+
+#search-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #40739e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#search-btn:hover {
+  background: #2f6ea6;
+}
+
+
+/* Suggestions dropdown */
+.suggestions {
+  position: absolute;
+  top: 45px;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.suggestions div {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.suggestions div:hover {
+  background: #f0f0f0;
+}
+
+/* Result card */
+.result {
+  margin-top: 25px;
+}
+
+/* ------------------------------
+   ✅ STUDENT INFO & BOOK TABLE STYLES
+------------------------------ */
+
+/* Card styling (for Student Info and Borrowed Books) */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  border: 1px solid #e2e2e2;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #2b5aa6;
+  border-bottom: 2px solid #2b5aa6;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+/* Text inside card */
+.card p {
+  font-size: 15px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.card p strong {
+  color: #000;
+}
+
+/* ------------------------------
+   ✅ TABLE STYLES FOR BORROWED BOOKS
+------------------------------ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #40739e;
+  color: white;
+  text-align: left;
+}
+
+th, td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+tbody tr:hover {
+  background: #f7f9fc;
+  transition: background 0.2s ease;
+}
+
+/* Status column */
+td:nth-child(5) {
+  text-transform: capitalize;
+}
+
+/* ------------------------------
+   ✅ RETURN BUTTON
+------------------------------ */
+.return-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.return-btn:hover {
+  background: #218838;
+  transform: scale(1.03);
+}
+
+.return-btn:active {
+  background: #1e7e34;
+  transform: scale(0.98);
+}
+
+/* ------------------------------
+   ✅ NO RESULTS MESSAGE
+------------------------------ */
+.result p {
+  font-size: 15px;
+  color: #666;
+  text-align: center;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* ------------------------------
+   ✅ PAGE TITLE
+------------------------------ */
+.page-title {
+  font-size: 24px;
+  color: #2b5aa6;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ------------------------------
+   ✅ SCROLLBAR STYLING (subtle)
+------------------------------ */
+.suggestions::-webkit-scrollbar {
+  width: 6px;
+}
+
+.suggestions::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.info-table th {
+  background: #f2f2f2;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+.info-table td {
+  padding: 10px;
+  font-size: 15px;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  
+}
+
